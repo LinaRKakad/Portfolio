@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Personal Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://kit.fontawesome.com/8619d1c8ed.js" crossorigin="anonymous"></script>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times"onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Java Developer and UI/UX Designer</p>
+                <h1>Hi, I'm <span>Lina</span>
+                    <br>Kakad From Aurangabad</h1>
+            </div>
+
+        </div>
+    </div>
+    <!---------------------------about-------------------------------------->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                            Greetings, I'm Lina Ramdas Kakad, representing Ch. Sambhaji Nagar (Aurangabad).
+                         I recently graduated with a Bachelor's Degree from Marathwada Institute Of Technology, 
+                         where I specialized in Computer Engineering.My journey took an exciting turn when I
+                         undertook a rigorous Java Full Stack Development program at Full Stack Guru Institute 
+                        in Pune. Throughout this immersive experience, I honed my skills in Core Java, SQL Databases, 
+                        HTML, CSS, and Javascript. Additionally, I gained valuable insights into essential concepts 
+                        like Connections, JDBC Connection Framework, and Spring-Boot.
+                            As a fresher in the field of computer engineering, I bring not only a solid academic foundation 
+                        but also a keen enthusiasm for learning and a strong drive to excel. I am eager to leverage my 
+                        skills and embark on challenging projects that allow me to contribute meaningfully to the 
+                        ever-evolving landscape of technology.I am deeply committed to continuous growth and staying
+                        updated with the latest advancements in the field, making me a dedicated and valuable addition 
+                        to any team.
+
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java Development</span><br>Development using java </li>
+                            <li><span>UI/UX</span><br> Designing Web/app interface</li>
+                            <li><span>SQL Development</span><br> Databases Related Quries</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Freshers</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>B.Tech in Computer Engineer at Marathwada institute of technology Aurangabad(MIT).</li>
+                            <li><span>2020</span><br>Diploma in Computer engineering at Mahatma Gandhi Mission(MGM).</li>
+                            <li><span>2016</span><br>SSC Board in San meera school.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------Services-------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java Developer</h2>
+                    <p>I'm skilled with java Developer role. with the key responsibility and work in java Development,Software Development. Developing and maintaining java-based applications.</p>
+                    <a href="#">Know More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>UI/UX Designing</h2>
+                    <p>Implementing new Web application.using HTML,CSS,Javascript,React etc.</p>
+                    <a href="#">Know More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>SQL Development</h2>
+                    <p>To manage, organize large amounts of data efficiently. They allow you to store, retrieve, update, and manipulate data using a structured query language(SQL).</p>
+                    <a href="#">Know More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!---------------------------portolio-------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work.jpeg">
+                <div class="layer">
+                    <h3>Online Exam System</h3>
+                    <p>
+                        Online Quiz Exam System is web-based application
+                         for technical evaluation. Online examination 
+                         System not only replace paperwork but also releases
+                          the workbench.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work2.jpeg">
+                <div class="layer">
+                    <h3>Online grocery shopping</h3>
+                    <p>Online grocery shopping is a supermarket that allows
+                         online purchasing of fruits, vegetables etc.you can
+                         conveniently computer to place your order online. 
+                         you can select your choice of fruitsand vegetable 
+                         from the grocery store .once you have finalized 
+                         the order, then you can add anitem to the shopping 
+                         cart.When you checkout from shopping cart, then you 
+                         order will bedevelop at the doorstep.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work3..jpeg">
+                <div class="layer">
+                    <h3>Library Management System</h3>
+                    <p>Library Management System is basically updating 
+                        the manual library system into an internet-based
+                         web application so that the users can know the 
+                         details of their accounts, availability of books 
+                         and maximum limit for borrowing and many more features.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <a href="#" class="btn">See More</a>
+</div>
+<!----------------------------Contact------------------------------------->
+<div id="contact">
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>
+                    linakakad6875@gmail.com
+                </p>
+                <p><i class="fa-solid fa-square-phone"></i>
+                  8459238966
+                </p>
+                <div class="social-icons">
+                    <a href="www.linkedin.com/in/linakakad"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/prachi_kakad/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+
+                <!--------------------------download cv link------------------------>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                <a href="images/my-intro.zip" download class="btn btn2">Download Introduction Video</a>
+                
+            </div>
+            
+            <div class="contact-right">
+            </div>
+</div>
+<!----------------------------form---------------------->
+
+<form name="submit-to-google-sheet">
+    <input type="text" name="Name" placeholder="Your Name" required>
+    <input type="email" name="Email" placeholder="Your email" required>
+    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+    <button type="submit" class="btn btn2">Submit</button>
+</form>
+<span id="msg"></span>
+</div>
+</div>
+</div>
+<!--------------------------Scriptsss-------------------->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px";
+        }
+    </script>
+</body>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyywQorbu251uRRQQz4SRQVUkAoQvZWREJ7gu2BYPAvlkpw5KUdEu3m5Msmsj5s86RC/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg. innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</html>
